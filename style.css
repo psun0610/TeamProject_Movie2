@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=PT+Sans&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'PT Sans', sans-serif; */
+
 .logo {
   width: 80px;
 }
 
 .banner-img {
   object-fit: cover;
+}
+
+.noto {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+* {
+  font-family: 'PT Sans', sans-serif;
 }
