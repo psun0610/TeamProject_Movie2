@@ -18,3 +18,62 @@ font-family: 'PT Sans', sans-serif; */
 * {
   font-family: 'PT Sans', sans-serif;
 }
+
+header>div {
+  height: 250px;
+  background: linear-gradient(to left, rgb(203,198,218), rgb(247,216,213));
+}
+
+.selectmovie {
+  bottom: -28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myform fieldset{
+    display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+    direction: rtl; /* 이모지 순서 반전 */
+    border: 0; /* 필드셋 테두리 제거 */
+}
+
+#myform fieldset p {
+  text-align: center;
+}
+
+#myform input[type=radio]{
+    display: none; /* 라디오박스 감춤 */
+}
+
+#myform input[type=radio]:checked ~ label{
+  text-shadow: 0 0 0 rgb(255, 231, 15); /* 마우스 클릭 체크 */
+}
+
+#myform label{
+    font-size: 2em; /* 이모지 크기 */
+    color: transparent; /* 기존 이모지 컬러 제거 */
+    text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+}
+
+#myform label:hover{
+  text-shadow: 0 0 0 rgb(249, 238, 131); /* 마우스 호버 */
+}
+#myform label:hover ~ label{
+  text-shadow: 0 0 0 rgb(249, 238, 131); /* 마우스 호버 뒤에오는 이모지들 */
+}
+
+hr {
+  width: 80px;
+}
+
+.btn-color {
+  background-color: rgb(204,218,235);
+}
+
+
+
+/* 회색: 197 202 208
+하늘색: 204 218 235
+보라색: 203 198 218
+핑크1: 247 216 213
+핑크2: 255 229 234
+핑크3: 252 235 240 */
