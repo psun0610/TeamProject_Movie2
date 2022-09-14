@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>영화 소개 페이지</title>
   <link rel="stylesheet" href="style.css">
   <!-- CSS only -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 </head>
 <body>
   <!-- 네비게이션 바  -->
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <nav class="navbar navbar-expand-lg" style="background:linear-gradient(#ededed, #fdfdfd);">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img class="logo" src="./images/logo.png">
@@ -23,13 +24,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="02_home.html">Home</a>
+            <a class="nav-link active text-dark fw-bold" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white-50" href="03_community.html">Community</a>
+            <a class="nav-link text-secondary" href="03_community.html">Community</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white-50" data-bs-toggle="modal" href="#loginModal">Login</a>
+            <a class="nav-link text-secondary" data-bs-toggle="modal" href="#loginModal">Login</a>
           </li>
         </ul>
       </div>
@@ -61,7 +62,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn" style="--bs-btn-bg:#ffc4e0;">Submit</button>
         </div>
       </div>
     </div>
@@ -95,10 +96,15 @@
     <h2 class="my-5 text-center fw-bold fs-1">Boxoffice</h2>
     <div class="row justify-content-center mx-5">
       <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2 px-3 mb-5">
+
         <div class="card rounded-5 shadow" style="--bs-card-inner-border-radius: 2rem;">
-          <img src="./images/movie1.jpg" class="card-img-top cardshape" alt="...">
+          <a href="05_movie.html">
+            <img src="./images/movie1.jpg" class="card-img-top cardshape" alt="...">
+          </a>
           <div class="card-body">
-            <h5 class="card-title">쇼생크 탈출</h5>
+            <a href="05_movie.html" class="text-dark text-decoration-none">
+              <h5 class="card-title noto">쇼생크 탈출</h5>
+            </a>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill d-inline-block text-warning" viewBox="0 0 16 16">
                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -116,6 +122,7 @@
             <p class="card-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, veniam. Porro velit consectetur harum ipsam, commodi totam unde beatae veritatis laborum placeat exercitationem maiores fugiat.</p>
           </div>
         </div>
+
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2 px-3 mb-5">
@@ -144,7 +151,7 @@
         <div class="card rounded-5 shadow" style="--bs-card-inner-border-radius: 2rem;">
           <img src="./images/movie3.jpg" class="card-img-top cardshape" alt="...">
           <div class="card-body">
-            <h5 class="card-title">다크 나이트 라이즈</h5>
+            <h5 class="card-title noto">다크 나이트 라이즈</h5>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill d-inline-block text-warning" viewBox="0 0 16 16">
                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -168,7 +175,7 @@
         <div class="card rounded-5 shadow" style="--bs-card-inner-border-radius: 2rem;">
           <img src="./images/movie4.jpg" class="card-img-top cardshape" alt="...">
           <div class="card-body">
-            <h5 class="card-title">그랜드 부다페스트 호텔</h5>
+            <h5 class="card-title noto">그랜드 부다페스트 호텔</h5>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill d-inline-block text-warning" viewBox="0 0 16 16">
                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -213,7 +220,7 @@
         <div class="card rounded-5 shadow" style="--bs-card-inner-border-radius: 2rem;">
           <img src="./images/movie6.jpg" class="card-img-top cardshape" alt="...">
           <div class="card-body">
-            <h5 class="card-title">위대한 쇼맨</h5>
+            <h5 class="card-title noto">위대한 쇼맨</h5>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill d-inline-block text-warning" viewBox="0 0 16 16">
                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>

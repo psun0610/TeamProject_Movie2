@@ -19,13 +19,24 @@ font-family: 'PT Sans', sans-serif; */
   font-family: 'PT Sans', sans-serif;
 }
 
-header>div {
+.review-header>div {
   height: 250px;
   background: linear-gradient(to left, rgb(203,198,218), rgb(247,216,213));
 }
 
+.header-margin {
+  margin-bottom: 100px;
+}
+
+.review-header>div>h1 {
+  font-weight: bold;
+  font-size: 70px;
+  color: white;
+  padding-bottom: 30px;
+}
+
 .selectmovie {
-  bottom: -28%;
+  top: -7.5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -48,32 +59,94 @@ header>div {
   text-shadow: 0 0 0 rgb(255, 231, 15); /* 마우스 클릭 체크 */
 }
 
-#myform label{
+#myform>fieldset>label{
     font-size: 2em; /* 이모지 크기 */
     color: transparent; /* 기존 이모지 컬러 제거 */
     text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
 }
 
-#myform label:hover{
+#myform>fieldset>label:hover{
   text-shadow: 0 0 0 rgb(249, 238, 131); /* 마우스 호버 */
 }
-#myform label:hover ~ label{
+#myform>fieldset>label:hover ~ label{
   text-shadow: 0 0 0 rgb(249, 238, 131); /* 마우스 호버 뒤에오는 이모지들 */
 }
 
-hr {
+.form-hr {
   width: 80px;
 }
 
-.btn-color {
-  background-color: rgb(204,218,235);
-}
-
-
-
+/* #5aaae7
+#ffc4e0 */
 /* 회색: 197 202 208
 하늘색: 204 218 235
 보라색: 203 198 218
 핑크1: 247 216 213
 핑크2: 255 229 234
 핑크3: 252 235 240 */
+
+
+/* 05_movie.html */
+.movie-header {
+  height: 500px;
+  background-image: url(https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg);
+  background-size: cover;
+  /* background-size: contain;
+  background-position: center;
+  background-repeat: repeat; */
+}
+
+.movie-header-bg {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+.movie-content {
+  left: 50%;
+  top: 15px;
+  transform: translate(-50%, 0);
+}
+
+.movie-content>img {
+  height: 470px;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.5);
+}
+
+.movie-content>div>h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.movie-detail {
+  margin: 0;
+}
+
+.movie-detail>dt {
+  display: inline-block;
+  width: 100px;
+}
+
+.movie-detail>dd {
+  display: inline-block;
+}
+
+.movie-section>div>h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.cast div img {
+  border-radius: 1rem;
+}
+
+.cast-name {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.cast-role {
+  color: gray;
+}
